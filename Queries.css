@@ -1,0 +1,167 @@
+/* ******************* */
+/* Below 1104px landscape tablet*/
+/* ******************* */
+@media (max-width: 69em) {
+    .message {
+        top: 20%;
+    }
+    .secondary-heading {
+        font-size: 4rem;
+    }
+    .main-nav-link:link, .main-nav-link:visited{
+        padding: 3.5rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 64em) {
+    .message {
+        top: 15%;
+    }
+    .message p {
+        font-size: 1.6rem;
+    }
+    html {
+        font-size: 56.25%;
+    }
+
+    .vessel {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ******************* */
+/* Below 848px tablets*/
+/* ******************* */
+@media (max-width: 53em) {
+    .nav {
+        background-color: white;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .header.open-nav  .nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+    }
+    
+    .main-nav-link:link, .main-nav-link:visited{
+        padding: 0;
+        font-size: 3.2rem;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+
+    .nav-icon {
+        display: block;
+        z-index: 1000;
+        /* width: 3.2rem; */
+    }
+
+    .header.open-nav .mobile-icon[name="close-outline"], .header.open-nav .nav-icon .close {
+        display: block;
+      }
+      .header.open-nav .mobile-icon[name="menu-outline"], .header.open-nav .nav-icon .open {
+        display: none;
+      }
+    .message {
+        top: 10%;
+        max-width: 50rem;
+        width: 100%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .message p {
+        font-size: 2rem;
+    }
+
+    .flower-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ******************* */
+/* Below 720px tablets*/
+/* ******************* */
+@media (max-width: 45em) {
+    .secondary-heading {
+        font-size: 3.2rem;
+    }
+    .main-nav-link:link, .main-nav-link:visited{
+        padding: 0;
+        font-size: 3.2rem;
+    }
+}
+
+/* ******************* */
+/* Below 608px phones*/
+/* ******************* */
+@media (max-width: 38em) {
+    .message {
+        display: none;
+    }
+
+    .message p {
+       font-size:1.5rem;
+    }
+
+    .button_container {
+        padding-top: 1.2rem;
+    }
+
+    .btn-4 {
+        font-size: 1.2rem;
+    }
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .order:link , .order:visited { 
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
